@@ -49,8 +49,7 @@
 
             (when (require 'rainbow-delimiters nil t)
               (global-rainbow-delimiters-mode))
-
-            (require 'init-modeline)))
+          ))
 
 (eval-after-load 'vc-git
   '(progn
