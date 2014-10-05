@@ -7,8 +7,9 @@
                   (get-char-property (point) 'face))))
     (if face (message "Face: %s" face) (message "No face at %d" pos))))
 
-(when (package-installed-p 'solarized-theme)
-     (load-theme 'solarized-dark t))
+; (when (package-installed-p 'solarized-theme)
+;      (load-theme 'solarized-dark t))
+
 
 (add-hook 'window-setup-hook
           (lambda ()
@@ -21,14 +22,14 @@
             (custom-set-variables
              '(yascroll:delay-to-hide nil))
 
-            (custom-set-faces
-             '(flymake-errline ((t (:underline (:color "red" :style wave)))))
-             '(flymake-warnline ((t (:underline (:color "yellow"))))))
+            ; (custom-set-faces
+            ;  '(flymake-errline ((t (:underline (:color "red" :style wave)))))
+            ;  '(flymake-warnline ((t (:underline (:color "yellow"))))))
 
-            (when (require 'volatile-highlights nil t)
-              (volatile-highlights-mode t)
-              (custom-set-faces
-               '(vhl/default-face ((t (:background "dark slate gray"))))))
+            ; (when (require 'volatile-highlights nil t)
+            ;   (volatile-highlights-mode t)
+            ;   (custom-set-faces
+            ;    '(vhl/default-face ((t (:background "dark slate gray"))))))
 
             (line-number-mode 1)
             ;; 行番号表示
@@ -47,13 +48,8 @@
             (custom-set-variables
              '(show-paren-delay 0.1))
 
-            (when (require 'rainbow-delimiters nil t)
-              (global-rainbow-delimiters-mode))
+            ; (when (require 'rainbow-delimiters nil t)
+            ;   (global-rainbow-delimiters-mode))
           ))
-
-(eval-after-load 'vc-git
-  '(progn
-     (when (require 'git-gutter-fringe nil t)
-       (global-git-gutter-mode t))))
 
 (provide 'init-face)

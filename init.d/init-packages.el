@@ -16,7 +16,7 @@
     undo-tree
     undohist
     volatile-highlights
-    solarized-theme
+    ;solarized-theme
     hlinum
     yascroll
     ))
