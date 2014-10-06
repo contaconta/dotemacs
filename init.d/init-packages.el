@@ -17,6 +17,7 @@
     undohist
     volatile-highlights
     ;solarized-theme
+    zenburn-theme
     hlinum
     yascroll
     ))

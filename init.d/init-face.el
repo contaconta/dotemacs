@@ -10,6 +10,9 @@
 ; (when (package-installed-p 'solarized-theme)
 ;      (load-theme 'solarized-dark t))
 
+(when (package-installed-p 'zenburn-theme)
+     (load-theme 'zenburn t))
+
 
 (add-hook 'window-setup-hook
           (lambda ()
