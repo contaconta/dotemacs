@@ -4,6 +4,11 @@
    ac-delay 0.1
    ac-auto-show-menu 0.2
    ac-use-menu-map t)
+
+  (define-key ac-menu-map (kbd "C-n") 'ac-next)
+  (define-key ac-menu-map (kbd "C-p") 'ac-previous)
+  (define-key ac-mode-map (kbd "M-/") 'auto-complete))
+  
   (setq-default ac-sources
                 '(ac-source-abbrev
                   ac-source-dictionary
@@ -22,9 +27,9 @@
   ;;               (setq ac-sources
   ;;                     (append '(ac-source-clang ac-source-yasnippet) ac-sources)))))
 
-  (add-hook 'css-mode-hook
-            (lambda ()
-              (setq ac-sources
-                    (append '(ac-source-css-property) ac-sources)))))
+  ;; (add-hook 'css-mode-hook
+  ;;           (lambda ()
+  ;;             (setq ac-sources
+  ;;                   (append '(ac-source-css-property) ac-sources)))))
 
 (provide 'init-auto-complete)

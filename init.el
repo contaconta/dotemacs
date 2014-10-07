@@ -12,5 +12,6 @@
 (require 'init-face)
 (require 'init-global-configs)
 (require 'init-helm)
+(require 'init-auto-complete)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
