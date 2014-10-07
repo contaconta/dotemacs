@@ -7,11 +7,11 @@
                   (get-char-property (point) 'face))))
     (if face (message "Face: %s" face) (message "No face at %d" pos))))
 
-; (when (package-installed-p 'solarized-theme)
-;      (load-theme 'solarized-dark t))
+;(when (package-installed-p 'solarized-theme)
+;     (load-theme 'solarized-dark t))
 
-(when (package-installed-p 'zenburn-theme)
-     (load-theme 'zenburn t))
+;(when (package-installed-p 'zenburn-theme)
+;     (load-theme 'zenburn t))
 
 
 (add-hook 'window-setup-hook
@@ -19,11 +19,11 @@
 
             (global-linum-mode)
             ;(global-hl-line-mode 1)
-            (hlinum-activate)
+            ;(hlinum-activate)           
 
-            (global-yascroll-bar-mode 1)
-            (custom-set-variables
-             '(yascroll:delay-to-hide nil))
+            ;; (global-yascroll-bar-mode 1)
+            ;; (custom-set-variables
+            ;;  '(yascroll:delay-to-hide nil))
 
             ; (custom-set-faces
             ;  '(flymake-errline ((t (:underline (:color "red" :style wave)))))
@@ -50,6 +50,7 @@
             (set-face-attribute 'show-paren-match-face nil :underline "red")
             (custom-set-variables
              '(show-paren-delay 0.1))
+
 
             ; (when (require 'rainbow-delimiters nil t)
             ;   (global-rainbow-delimiters-mode))

@@ -10,16 +10,16 @@
   '(auto-complete
     auto-complete-clang
     auto-async-byte-compile
-    flycheck
+    ;flycheck
     markdown-mode
     helm
     undo-tree
     undohist
-    volatile-highlights
+    ;volatile-highlights
     ;solarized-theme
-    zenburn-theme
-    hlinum
-    yascroll
+    ;zenburn-theme
+    ;hlinum
+    ;yascroll
     ))
 
 (let ((not-installed (loop for x in installing-package-list
